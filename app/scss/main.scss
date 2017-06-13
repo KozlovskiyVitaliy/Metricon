@@ -106,6 +106,7 @@ input {
 
   &:hover {
     background-color: $hover-color;
+    cursor: pointer;
   }
 }
 
@@ -227,7 +228,7 @@ input {
 }
 
 .slider3 {
-  background: url("../img/slide3.jpg") no-repeat 0px -100px;
+  background: url("../img/slide3.jpg") no-repeat 0px -99px;
   height: 700px;
   text-align: center;
   

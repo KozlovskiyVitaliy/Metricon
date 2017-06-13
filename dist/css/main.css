@@ -82,7 +82,8 @@ input {
   text-align: center;
   padding: 10px 0; }
   .login:hover {
-    background-color: #f26b08; }
+    background-color: #f26b08;
+    cursor: pointer; }
 
 .first {
   height: 700px; }
@@ -168,7 +169,7 @@ input {
     line-height: 42px; }
 
 .slider3 {
-  background: url("../img/slide3.jpg") no-repeat 0px -100px;
+  background: url("../img/slide3.jpg") no-repeat 0px -99px;
   height: 700px;
   text-align: center; }
   .slider3 p {
