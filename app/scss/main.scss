@@ -114,9 +114,147 @@ input {
 //first-begin.
 
 .first {
-  background: black;
   height: 700px;
+
+  p {
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    font-size: 37px;
+  }
 }
+
+.slick-prev {
+  z-index: 10; 
+  left: 10%;
+
+  &::before {
+    display: block;
+    content: "";
+    background-image: url('../img/left-arrow.svg');
+    background-size: 35px 57px;
+    width: 35px;
+    height: 57px;
+  }
+
+  &:hover {
+
+    &::before {
+      background-image: url('../img/left-arrow-hover.svg');
+    }
+  }
+}
+
+.slick-next {
+  z-index: 10;
+  right: 10%;
+
+  &::before {
+    display: block;
+    content: "";
+    background-image: url('../img/right-arrow.svg'); 
+    background-size: 35px 57px;   
+    width: 35px;
+    height: 57px;
+  }
+
+  &:hover {
+
+    &::before {
+      background-image: url('../img/right-arrow-hover.svg');
+    }
+  }
+}
+
+.slick-dots {
+  z-index: 10;
+  bottom: 40px; 
+
+  li {
+    margin-right: 20px;
+  } 
+}
+
+.slick-dots li.slick-active button:before {
+  width: 20px;
+  height: 20px;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.6);
+  background-color: #ffffff;  
+}
+
+.slick-dots li button:before {
+  width: 20px;
+  height: 20px;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.6);
+  background-color: #20201f;  
+  content: "";
+  opacity: 1;   
+}
+
+.slick-dots li:hover button::before {   
+  background-color: $hover-color;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+.slider1 {
+  background: url("../img/slide1.jpg") no-repeat 0 -80px;
+  height: 700px;
+  text-align: center;
+
+  h1 {    
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.75); 
+    margin-top: 235px; 
+  }
+
+  p {
+    width: 563px;
+    line-height: 42px;
+    margin: 20px auto 43px;
+  }
+}
+
+.slider2 {
+  background: url("../img/slide2.jpg") no-repeat 0px -30px;
+  height: 700px;
+  text-align: center;
+
+   p {
+    margin: 307px auto 103px;
+    line-height: 42px;
+  }  
+}
+
+.slider3 {
+  background: url("../img/slide3.jpg") no-repeat 0px -100px;
+  height: 700px;
+  text-align: center;
+  
+  p {
+    margin: 307px auto 150px;
+  }
+}
+
+.btn__slider {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Regular", sans-serif;
+  font-size: 18px;
+  background-color: #20201f;
+  padding: 13px 0;
+  display: block;
+  margin: 20px auto 0;
+  width: 180px;
+  text-align: center;  
+
+  &:hover {
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.6);
+    background-color: #ffffff;
+    color: #20201f;
+  }
+}
+
 
 //first-end.
 
